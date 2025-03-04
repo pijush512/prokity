@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anton&family=Gugi&family=Handlee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+body{
+    font-family: "Poppins";
+}
+ul li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+
+/* Banner Section start here */
+.nav-item a {
+    font-size: 16px;
+    transition: 0.1s;
+}
+.nav-item a:hover{
+    color: #0274be !important;
+}
+.nav-item a button {
+    border-radius: 25px;
+    background-color:  #0274be;
+    border: none;
+    font-size: 15px;
+    padding: 11px 29px;
+}
+.nav-item a button:hover {
+    background-color: rgb(2, 3, 129);
+
+}
+/* .banner {
+    background-image: url(../Images/banner-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    overflow: hidden;
+} */
+
+.banner {
+    background-image: url(../Images/banner-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    overflow: hidden;
+    position: relative; 
+}
+
+/*t Gradient overlay using ::before */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(80deg, rgba(1, 34, 105, 0.6) 0%, rgba(87, 109, 155, 0.6) 100%); /* Gradient overlay */
+    z-index: 1; 
+}
+
+.banner-heading, .banner_big_text, .header_btn{
+    position: relative; 
+    z-index: 2;  
+    color: white; 
+    font-size: 2em; 
+    padding: 20px;  
+}
+/*todo close Gradient overlay using ::before */
+.banner-heading {
+    padding-top: 243px;
+    font-weight: 700;
+    padding-left: -10px;
+    margin-left: -10px;
+    font-size: 22px;
+}
+
+.banner-heading::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 109px;
+    height: 6px;
+    margin-top: 40px;
+}
+.banner_big_text {
+    font-family: 'Amatic SC', handwriting;
+    font-weight: 900;
+    font-size: 105px;
+    padding-top: 40px;
+    overflow: hidden;
+}
+.header_btn {
+    padding-top: 67px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 14px 27px;
+    background-color: white;
+    color: black;
+    margin-top: 46px;
+}
+.header_btn:hover {
+    color: white;
+    background-color: rgb(2, 3, 129);
+}
+/* todo Banner Section start here */
+
+/* About section design start here */
+/* .about {
+    background-image: url(../Images/banner-2.jpg);
+    background-color: blue !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 118vh;
+    overflow: hidden;
+    position: relative;
+} */
+
+.about {
+    background-image: url(../Images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 118vh;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s; 
+}
+
+/*todo Gradient overlay using ::before */
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(80deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%); /* Gradient color */
+    z-index: 1;
+}
+.about_heading, .about_text, .about_all_image, .k {
+    position: relative; 
+    z-index: 2; 
+    color: white; 
+    font-size: 2em; 
+    padding: 20px; 
+}
+/*todo close Gradient overlay using ::before */
+.about_heading {
+    padding-top: 50px;
+    position: relative;
+    font-family: Poppins;
+    font-size: 37px;
+    font-weight: 700;
+    padding-top: 162px;
+}
+.about_heading::after {
+    content: "";
+    display: block;
+    background-color: #0274be;
+    width: 109px;
+    height: 6px;
+    margin-top: 30px;
+    position: absolute;
+    right: 46%;
+}
+.about_text {
+    padding-top: 143px;
+    font-family: "Arial", Sans-serif;
+    color: #F4F4F4;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+}
+.about_all_image {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+}
+.k div img {
+    width: 100%;
+}
+.k {
+    margin-top: 94px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 28px;
+}
+/* About section design */
+.comon_after h1 {
+    margin-top: 94px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    color: #54595F;;
+}
+.comon_after h1::after {
+    content: "";
+    background-color: #012269;
+    height: 5px;
+    width: 100PX;
+    position: absolute;
+    top: 78px;
+    right: 43%;
+}
+.comon_after p {
+    margin-top: 70px;
+    text-align: justify;
+    font-size: 16px;
+    color: #7A7A7A;;
+}
+.about_button {
+    background-color: #012269;
+    border-radius: 45px;
+    position: absolute;
+    right: 62%;
+    color: #fff;
+    font-size: 14px;
+    padding: 11px 27px;
+    margin-top: 18px;
+}
+.after_last {
+    background-color: #F2F5F7;
+}
+/* Borard of Directors section design */
+.border_of_directors {
+    background-color: #999;
+    padding-bottom: 90px;
+}
+.border_of_directors h2 {
+    margin-top: 150px;
+    text-align: center;
+    color: #3a3a3a;
+    font-weight: 600;
+    position: relative;
+}
+.border_of_directors h2::after {
+    content: "";
+    background-color: rgb(87, 109, 155, 1);
+    width: 135px;
+    height: 4px;
+    position: absolute;
+    top: 86px;
+    right: 46%;
+}
+.border_of_directors_images div img {
+    border-radius: 25px;
+}
+.border_of_directors_images div h4 {
+    font-weight: 700;
+}
+.border_of_directors_images div p {
+    font-size: 14px;
+    color: #4b4f58;
+}
+.Treasurer {
+    padding-bottom: 75px;
+}
+.border_of_directors_button {
+    border-radius: 45px;
+    background-color: #012269;
+    color: white;
+    font-size: 15px;
+    padding: 13px 25px;
+    position: absolute;
+    right: 45%;
+    margin-top: -50px;
+}
+.border_of_directors_button:hover {
+    background-color: #d3d6db;
+}
+/* Gallery section design  */
+.gallery {
+    background-color: #f7fafd;
+    margin-top: -54px;
+    padding-bottom: 163px;
+}
+.gallery h1 {
+    font-weight: 600;
+    position: relative;
+}
+.gallery h1::after {
+    content: "";
+    width: 99px;
+    height: 4px;
+    background-color: rgb(87, 109, 155, 1);
+    position: absolute;
+    right: 46%;
+    top: 136px;
+
+}
+.gallery_button {
+    background-color: #012269;
+    color: #fff;
+    border-radius: 45px;
+    position: absolute;
+    right: 47%;
+    margin-top: 37px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.gallery_button:hover{
+    background-color: #0274be;
+}
+/* Donate section design here */
+/* .donate {
+    background-image: url("../Images/ESlFh4kWAAEbY8Q.jpg");
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} */
+
+.donate {
+    background-image: url("../Images/ESlFh4kWAAEbY8Q.jpg");
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+/* todo Gradient or solid color overlay using ::before */
+.donate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.34); 
+    z-index: 1;
+}
+.donate_doco h1, .donate_doco p, .donate_doco button {
+    position: relative; 
+    z-index: 2; 
+    color: white; 
+    font-size: 2em; 
+    padding: 20px; 
+}
+/*todo close Gradient or solid color overlay using ::before */
+
+
+
+
+
+
+
+
+.donate_doco h1 {
+    padding-top: 110px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    
+}
+.donate_doco p {
+    position: relative;
+    padding-top: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.donate_doco p::before {
+    content: "";
+    width: 94px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    right: 46%;
+    top: 10px;
+}
+.donate_doco button {
+    background-color: #fff;
+    color: #000;
+    border-radius: 45px;
+    position: absolute;
+    right: 44%;
+    margin-top: 37px;
+    padding: 13px 31px;
+    font-size: 15px;
+    margin-top: 17px;
+}
+.donate_doco button:hover {
+    background-color: #012269;
+    color: #fff;
+}
+/* Footer section  design here */
+.footer_area {
+    background-color: #e9e6e1;
+}
+.footer_box h5{
+    font-weight: 700;
+    color: #4b4f58;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+.footer_box p {
+    color: #4b4f58;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 8px;
+}
+
+ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 47px;
+    margin-left: -20px;
+}
+.footer_box img {
+    width: 125px;
+}
+.footer_map {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer_map {
+    width: 158px;
+}
+.footer_down_doco p {
+    font-size: 15px;
+}
+.footer_down_doco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 6px 0;
+}
+.footer_down_doco p span {
+    color: red;
+}
